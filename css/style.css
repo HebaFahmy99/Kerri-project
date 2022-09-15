@@ -1,0 +1,249 @@
+body {
+    font-family: 'Nunito', sans-serif;
+} 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+} 
+ 
+:root{ 
+    --main-color:#DF5D75;
+}
+
+.navbar-nav .nav-link.active{ 
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-link{ 
+    color: black;
+}
+.navbar-nav .nav-link:hover{ 
+    color: var(--main-color);
+}
+
+#home{ 
+    background-image: url(../images/header-bg.jpg); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+ .home-overlay{ 
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+
+#home h1::after{ 
+    content: ' ';
+    animation: heading-moving 10s infinite;
+}
+@keyframes heading-moving {
+    0%{ content: 'a|';   }
+    1.5%{ content: 'a |';   }
+    3%{ content: 'a G|';   }
+    4.5%{ content: 'a Gr|';   }
+    6%{ content: 'a Gra|';   }
+    7.5%{ content: 'a Grap|';   }
+    9%{ content: 'a Grapi|';   }
+    10.5%{ content: 'a Grapic|';   }
+    12%{ content: 'a Grapic D|';   }
+    13.5%{ content: 'a Grapic De|';   }
+    15%{ content: 'a Grapic Des|';   }
+    16.5%{ content: 'a Grapic Desi|';   }
+    18%{ content: 'a Grapic Desig|';   }
+    19.5%{ content: 'a Grapic Design|';   }
+    21%{ content: 'a Grapic Designe|';   }
+    22.5%{ content: 'a Grapic Designer|';   }
+    24%{ content: 'a Grapic Designer.|';   }
+    25.5%{ content: 'a Grapic Designer|';   }
+    27%{ content: 'a Grapic Designe|';   }
+    28.5%{ content: 'a Grapic Design|';   }
+    30%{ content: 'a Grapic Desig|';   }
+    31.5%{ content: 'a Grapic Desi|';   }
+    33%{ content: 'a Grapic Des|';   }
+    34.5%{ content: 'a Grapic De|';   }
+    36%{ content: 'a Grapic D|';   }
+    37.5%{ content: 'a Grapic |';   }
+    39%{ content: 'a Grapic|';   }
+    40.5%{ content: 'a Grapi|';   }
+    42%{ content: 'a Grap|';   }
+    43.5%{ content: 'a Gra|';   }
+    45%{ content: 'a Gr|';   }
+    46.5%{ content: 'a G|';   }
+    48%{ content: 'a P|';   }
+    49.5%{ content: 'a Ph|';   }
+    51%{ content: 'a Pho|';   }
+    52.5%{ content: 'a Phot|';   }
+    54%{ content: 'a Photo|';   }
+    55.5%{ content: 'a Photog|';   }
+    57%{ content: 'a Photogr|';   }
+    58.5%{ content: 'a Photogra|';   }
+    60%{ content: 'a Photograp|';   }
+    61.5%{ content: 'a Photograph|';   }
+    63%{ content: 'a Photographe|';   }
+    64.5%{ content: 'a Photographer|';   }
+    65%{ content: 'a Photographer.|';   }
+    66.6%{ content: 'a Photographer|';   }
+    68%{ content: 'a Photographe|';   }
+    69.5%{ content: 'a Photograph|';   }
+    71%{ content: 'a Photograp|';   }
+    72.5%{ content: 'a Photogra|';   }
+    74%{ content: 'a Photogr|';   }
+    75.5%{ content: 'a Photog|';   }
+    77%{ content: 'a Photo|';   }
+    78.5%{ content: 'a Phot|';   }
+    80%{ content: 'a Pho|';   }
+    81.5%{ content: 'a Ph|';   }
+    83%{ content: 'a P|';   }
+    84.5%{ content: 'a |';   }
+    86%{ content: 'a|';   }
+    87.6%{ content: '|';   }
+    89%{ content: ' K|';   }
+    90.5%{ content: ' Ke|';   }
+    92%{ content: ' Ker|';   }
+    93%{ content: ' Kerr|';   }
+    94%{ content: ' Kerri|';   }
+    95%{ content: ' Kerri |';   }
+    96%{ content: ' Kerri D|';   }
+    98%{ content: ' Kerri De|';   }
+    99%{ content: ' Kerri Deo|';   }
+    100%{ content: ' Kerri Deo.|';   }
+
+    
+}
+
+#home p { 
+     max-width: 500px; 
+}
+
+#home .home-overlay button{ 
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+#home .home-overlay button:hover{ 
+    background-color: white;
+    color: black;
+}
+
+#home .home-overlay .mouse-shape{ 
+    width: 30px; 
+    height: 45px; 
+    border: 1px solid white; 
+    bottom: 4%;
+    animation: up-icon 3s infinite;
+} 
+
+#home .home-overlay .mouse-shape::after{ 
+     content: "";
+    width: 3px; 
+    height: 9px; 
+    background-color: white;  
+    position: absolute; 
+    bottom: 6px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+@keyframes up-icon {
+    0%{ 
+        bottom: 9%;
+    } 
+    50%{ 
+        bottom: 6%;
+    } 
+    100%{ 
+        bottom: 4%;
+    }
+    
+}
+
+#about .social-media-icons .icon-item{ 
+    width: 2.4rem; 
+    height: 2.4rem;  
+    color: black;
+    border: 1px solid gray;
+    transition: all 0.7s;
+}
+#about .social-media-icons .icon-item:hover{  
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+#services .inner-item{ 
+    border: 1px solid #E8E8E8;
+}
+
+#services .horizontal-row{
+    width: 15%; 
+    height: 3px; 
+    background-color: var(--main-color);
+    margin: auto;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+#services .inner-item:hover .horizontal-row{
+    width: 22%; 
+}
+
+#portfolio .work-list{ 
+    list-style: none;
+    padding-left: 0;
+}
+
+#portfolio .work-list .active{ 
+    width: 4rem; 
+    height: 2.5rem; 
+    background-color: var(--main-color);
+}
+
+#portfolio .work-list li{ 
+padding: 0 30px;
+}
+#portfolio .work-list .li-work:hover{ 
+    width: 3.5rem; 
+    height: 2.5rem; 
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+#portfolio .work-list .big-width:hover{ 
+    width: 7.5rem; 
+    height: 2.5rem; 
+    background-color: var(--main-color);
+    color: white;
+} 
+
+#portfolio .inner-item { 
+    cursor: pointer;
+    overflow: hidden;
+}
+#portfolio .inner-item .overlay-layer{ 
+    transition: top 0.5s;
+    position : absolute;
+    background-color: rgba(0, 0, 0, 0.685);
+
+}
+#portfolio .inner-item:hover .overlay-layer{ 
+    top: 0; 
+
+}
+
+footer .contact-icon{ 
+    width: 3rem; 
+    height: 3rem; 
+    background-color:#313131;
+}
+
+footer .contact-icon i{
+    font-size: 20px; 
+    color:   #ABABA2;
+    padding: 20px; 
+    transition: color 1s;
+}
+footer .contact-icon i:hover{ 
+    color: var(--main-color);
+}
